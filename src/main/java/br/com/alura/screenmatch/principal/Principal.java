@@ -147,7 +147,7 @@ public class Principal {
         }
 
     private void bucarTopCincoSeries() {
-        List<Serie> topCinco = repositorio.findTop7ByOrderByAvaliacoesDesc();
+        List<Serie> topCinco = repositorio.findTop5ByOrderByAvaliacoesDesc();
         topCinco.forEach(s -> System.out.println(s.getTitulo() + "| Avaliação: " + s.getAvaliacoes()));
     }
 
